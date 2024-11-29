@@ -1,0 +1,219 @@
+body {
+    font-family: Arial;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    margin-top: 20px;
+}
+/*-----------------------------------------------------------------------------------------*/
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #fff07d;
+    padding: 15px 30px;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap; /*added after the problem of buttons distorting on half screen occurred */
+}
+.navbar .name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #511403;
+    margin-bottom: 10px;
+}
+
+.navbar .navigation {
+    list-style: none; /* Removes bullet points */
+    display: flex; /* Aligns links horizontally */
+    gap: 32px; /* Makes space between links */
+    margin-right: 0;
+    padding: 0;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+.navbar .navigation a {
+    text-decoration: none; /* Removes underlines */
+    color: #511403;
+    background-color: #fbb574;
+    font-size: 18px;
+    padding: 12px 20px;
+    border-radius: 5px; 
+}
+
+.navbar .navigation a:hover {
+    color: #fbb574; /* Orange color on hover */
+    background-color: #f7cc6f;
+}
+/*-----------------------------------------------------------------------------------------*/
+.intro {
+    height: 400px;
+    background:  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+     url('images/saltibarsciai.jpg') ; /* Replacing background with image and transparent black cover for readability */
+    background-size: cover; /* Cover the entire section */
+    background-position: center;
+    display: flex; /* Flexbox for centering content */
+    justify-content: center; /* Horizontally centers content */
+    align-items: center; /* Vertically centers content */
+    text-align: center; 
+    color: rgb(255, 255, 255); 
+}
+
+.intro-text h1 {
+    margin-top: 44px; /* Pushes the text down because the picture blends less with text there*/
+    font-size: 32px;
+    font-family: Cursive;
+}
+.intro-text p {
+    font-size: 20px;
+    font-family: Cursive;
+}
+/*-----------------------------------------------------------------------------------------*/
+.all {
+    padding: 50px;
+    text-align: center;
+    background-color: #ffffff;
+    color: #511403;
+
+}
+.all h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.recipes{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* To make cards responsive */
+}
+
+
+.recipe {
+    background: #f7e4da;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+.recipe img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.recipe-card h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.recipe-card p {
+    color: #555555;
+    font-size: 20px;
+}
+.recipe-btn {
+    padding: 10px 20px;
+    background-color: #fbb574;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+}
+.recipe-btn:hover {
+    color: #fbb574; /* Orange color on hover */
+    background-color: #f7cc6f;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+footer {
+    text-align: right;
+    padding: 20px;
+    background-color: #ffeab0;
+    color: #511403;
+}
+/*-----------------------------------------------------------------------------------------*/
+
+.details, .ingredients, .instructions {
+    padding: 20px;
+    margin: 20px auto;
+    text-align: center;
+    max-width: 1000px;
+}
+.ingredients{
+    background-color: #ffeab0;
+}
+
+.details img {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+.details h1 {
+    font-size: 40px;
+    color: #511403;
+}
+
+.ingredients h2, .instructions h2 {
+    font-size: 24px;
+    color: #511403;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.details p {
+    text-align: justify;
+    margin: 30px auto;
+    font-size: 20px;
+    color: #511403;
+}
+.ingredients p, .instructions p {
+    font-size: 20px;
+    color: #511403;
+    font-weight: bold;
+}
+
+.ingredients ul {
+    text-align: left;
+    max-width: 600px;
+}
+
+.ingredients ul li {
+    margin: 10px 0;
+    padding: 5px 10px;
+    color: #511403;
+
+}
+
+.instructions ol {
+    text-align: justify;
+}
+
+.instructions ol li {
+    margin: 10px 0;
+    padding-left: 10px;
+    font-size: 20px;
+    border-left: 3px solid #fbb574;
+    margin-bottom: 20px;
+}
+
+.instructions a{
+    text-decoration: none;
+    color: #511403;
+    background-color: #fbb574;
+    font-size: 18px;
+    padding: 12px 20px;
+    border-radius: 5px; 
+    margin-top: 20px;
+}
+
+.instructions a:hover {
+    color: #fbb574;
+    background-color: #f7cc6f;
+}
